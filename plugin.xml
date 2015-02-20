@@ -51,9 +51,10 @@ http://docs.splunk.com/Documentation/MintSDKs/latest/SplunkMINTSDKs/AddSplunkMIN
         <framework src="SystemConfiguration.framework" />
         <framework src="CoreTelephony.framework" />
         <framework src="libz.dylib" />
-        <!-- hook type="before_build" src="scripts/ios_after_plugin_install.rb"/ -->
+
         <hook type="after_plugin_install" src="scripts/ios_after_plugin_install.rb"/>
 
+		<preference name="SPLUNK_API_KEY" />
     </platform>
     
 </plugin>

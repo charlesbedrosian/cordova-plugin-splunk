@@ -38,6 +38,6 @@
 
 +(void)didFinishLaunching:(NSNotification*)notification {
 	NSLog(@"Init and start session in Mint");
-	[[Mint sharedInstance] initAndStartSession:@"API_KEY"];
+	[[Mint sharedInstance] initAndStartSession:@"$SPLUNK_API_KEY"];
 }
 @end
